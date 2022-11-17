@@ -15,11 +15,11 @@ $(document).ready((event) => {
         }
         $('p#loginResult').text(message);
         // alert(message);
-        $('p').click(function(){
-            alert("This is a paragraph")
-            alert("Told you!! this is a P")
-          });
-    })
 
+    })
+    $('p').click(function(){
+        alert("This is a paragraph")
+        alert("Told you!! this is a P")
+      });
     event.preventDefault();
 });
