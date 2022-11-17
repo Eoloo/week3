@@ -29,6 +29,21 @@ $(document).ready((event) => {
         $("button#submit").hover()
         alert("mouse here")
     })
+    $("button#green").click(function(){
+        $("body").removeClass();
+        $("body").addClass("green-background")
+        alert("it is a go")
+    })
+    $("button#yellow").click(function(){
+        $("body").removeClass();
+        $("body").addClass("yellow-background")
+        alert("ooh, something aint ok")
+    })
+    $("button#red").click(function(){
+        $("body").removeClass();
+        $("body").addClass("red-background")
+        alert("Danger!!Danger!!")
+    })
     // })
     // $("button").mouseLeave(function(){
     //     $("button#submit").mouseLeave()
