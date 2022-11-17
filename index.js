@@ -10,7 +10,7 @@ $(document).ready((event) => {
             if (String(emailValue).length < 3 || String(passwordValue).length < 3) message = 'Please provide more than 3 characters for email and/or password';
             else {
                 if (!String(emailValue).includes('@')) message = 'Please provide a valid email';
-                else message = 'Logged in successfuly as ' + emailValue;
+                else message = 'Logged in successfuly';
             }
         }
         $('p#loginResult').text(message);
@@ -25,9 +25,14 @@ $(document).ready((event) => {
         $("p#second").fadeOut()
         alert("faded paragraph")
     })
-    $("button").hover(function(){
-        $("button.submit").hover()
+    $("button#submit").hover(function(){
+        $("button#submit").hover()
         alert("mouse here")
     })
+    // })
+    // $("button").mouseLeave(function(){
+    //     $("button#submit").mouseLeave()
+    //     alert("mouse out")
+    // })
     event.preventDefault();
 });
