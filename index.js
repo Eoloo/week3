@@ -17,9 +17,17 @@ $(document).ready((event) => {
         // alert(message);
 
     })
-    $('p').click(function(){
+    $('p#first').click(function(){
+        $("p#first").hide()
         alert("This is a paragraph")
-        alert("Told you!! this is a P")
       });
+    $("p#second").click(function(){
+        $("p#second").fadeOut()
+        alert("faded paragraph")
+    })
+    $("button").hover(function(){
+        $("button.submit").hover()
+        alert("mouse here")
+    })
     event.preventDefault();
 });
